@@ -11,6 +11,13 @@
 </head>
 <body>
 
+<!-- ===== language toggle ===== -->
+<div class="lang-toggle" id="langToggle">
+  <button type="button" data-lang="ja">日本語</button>
+  <span class="sep">/</span>
+  <button type="button" data-lang="en">EN</button>
+</div>
+
 <!-- ===== topbar ===== -->
 <div class="topbar" id="topbar">
   <span class="mincho">悠三堂</span>
@@ -21,12 +28,12 @@
 <header class="hero" data-screen-label="ヒーロー">
   <div class="wrap">
     <img class="hero-logo reveal in" src="assets/logo.png" alt="悠三堂 YUSANDO" />
-    <h1 class="hero-iwa reveal">和を以て貴しと為す。</h1>
-    <p class="hero-tagline reveal d1">
+    <h1 class="hero-iwa reveal" data-en="Harmony, above all.">和を以て貴しと為す。</h1>
+    <p class="hero-tagline reveal d1" data-en='In harmony with <span class="accent">people</span>, with <span class="accent">nature</span>, with <span class="accent">time</span>.<br />Every endeavour of Yusando <span class="end">begins here.</span>'>
       人と<span class="accent">和し</span>、自然と<span class="accent">和し</span>、時代と<span class="accent">和する</span>。<br />
       悠三堂のすべての営みは、<span class="end">ここから始まります。</span>
     </p>
-    <p class="hero-en reveal d2">Harmony above all — with people, with nature, with time.</p>
+    <p class="hero-en reveal d2" data-en="和を以て貴しと為す — 人と、自然と、時代と和して。">Harmony above all — with people, with nature, with time.</p>
   </div>
   <div class="wrap">
     <div class="scrollcue"><span class="line"></span>Scroll</div>
@@ -37,8 +44,8 @@
 <section class="mission" data-screen-label="ミッション">
   <div class="wrap">
     <span class="eyebrow reveal">Our Way of Life</span>
-    <p class="m-copy reveal d1">自然栽培と<span class="accent">アート</span>、<span class="accent">哲学</span>をベースに、<span class="end">人生を楽しむ。</span></p>
-    <p class="m-sub reveal d2">
+    <p class="m-copy reveal d1" data-en='Rooted in natural cultivation, <span class="accent">art</span> and <span class="accent">philosophy</span>, we <span class="end">savour life.</span>'>自然栽培と<span class="accent">アート</span>、<span class="accent">哲学</span>をベースに、<span class="end">人生を楽しむ。</span></p>
+    <p class="m-sub reveal d2" data-en="To till. To make. To think. To taste.<br />The whole of that life is Yusando.">
       耕す。つくる。考える。味わう。<br />
       その暮らしのすべてが、悠三堂です。
     </p>
@@ -50,26 +57,26 @@
   <div class="wrap">
     <div class="head">
       <span class="eyebrow reveal">Three Roots</span>
-      <p class="reveal d1">生き方を支える、三つの柱。</p>
+      <p class="reveal d1" data-en="Three roots that sustain a way of life.">生き方を支える、三つの柱。</p>
     </div>
     <div class="tri">
       <div class="pillar reveal d1">
         <div class="num">01</div>
-        <h3>自然栽培</h3>
-        <div class="en">Natural Cultivation</div>
-        <p>農薬にも肥料にも頼らず、土と作物に具わる本来の力を引き出す。自然の歩みに身を委ねる、すべての営みの礎。</p>
+        <h3 data-en="Natural Cultivation">自然栽培</h3>
+        <div class="en" data-en="自然栽培">Natural Cultivation</div>
+        <p data-en="Without pesticides or fertiliser, we draw out the innate power of soil and plant. Surrendering to nature's pace — the bedrock of all we do.">農薬にも肥料にも頼らず、土と作物に具わる本来の力を引き出す。自然の歩みに身を委ねる、すべての営みの礎。</p>
       </div>
       <div class="pillar reveal d2">
         <div class="num">02</div>
-        <h3>アート</h3>
-        <div class="en">Art</div>
-        <p>美を、暮らしの中心に取り戻す。眺めるにとどまらず、自らの手で生み出す側へ。鑑賞と創造のあわいを、暮らしのうちに養う。</p>
+        <h3 data-en="Art">アート</h3>
+        <div class="en" data-en="アート">Art</div>
+        <p data-en="Returning beauty to the heart of daily life. Not merely to behold, but to create — nurturing, within the everyday, the space between appreciation and making.">美を、暮らしの中心に取り戻す。眺めるにとどまらず、自らの手で生み出す側へ。鑑賞と創造のあわいを、暮らしのうちに養う。</p>
       </div>
       <div class="pillar reveal d3">
         <div class="num">03</div>
-        <h3>哲学</h3>
-        <div class="en">Philosophy</div>
-        <p>なぜつくるのか、いかに生きるのか。自然と人、過去と現在、神と人――その結びを、問いつづける。</p>
+        <h3 data-en="Philosophy">哲学</h3>
+        <div class="en" data-en="哲学">Philosophy</div>
+        <p data-en="Why we make, how we live. We keep questioning the bonds between nature and people, past and present, the divine and the human.">なぜつくるのか、いかに生きるのか。自然と人、過去と現在、神と人――その結びを、問いつづける。</p>
       </div>
     </div>
   </div>
@@ -80,14 +87,14 @@
   <div class="wrap">
     <div class="head">
       <span class="eyebrow reveal">Our Principles</span>
-      <h2 class="reveal d1">活動の方針</h2>
+      <h2 class="reveal d1" data-en="Our Principles">活動の方針</h2>
     </div>
     <ul class="p-list reveal d2">
-      <li><span class="pno">一</span>和を大切にする</li>
-      <li><span class="pno">二</span>自然のリズムに合わせる</li>
-      <li><span class="pno">三</span>無理をしない</li>
-      <li><span class="pno">四</span>家族で協力し、取り組む</li>
-      <li><span class="pno">五</span>感謝の心を大切にする</li>
+      <li><span class="pno" data-en="I">一</span><span data-en="Hold harmony dear">和を大切にする</span></li>
+      <li><span class="pno" data-en="II">二</span><span data-en="Move with nature's rhythm">自然のリズムに合わせる</span></li>
+      <li><span class="pno" data-en="III">三</span><span data-en="Never force the pace">無理をしない</span></li>
+      <li><span class="pno" data-en="IV">四</span><span data-en="Work together as a family">家族で協力し、取り組む</span></li>
+      <li><span class="pno" data-en="V">五</span><span data-en="Keep a heart of gratitude">感謝の心を大切にする</span></li>
     </ul>
   </div>
 </section>
@@ -99,8 +106,8 @@
       <div class="idx reveal">悠</div>
       <div>
         <span class="eyebrow reveal">What We Do</span>
-        <h2 class="reveal d1">茶も、米も、酒も、美も。<br />暮らしを、自らの手でつくる。</h2>
-        <p class="reveal d2">
+        <h2 class="reveal d1" data-en="Tea, rice, sake, beauty.<br />A life made by our own hands.">茶も、米も、酒も、美も。<br />暮らしを、自らの手でつくる。</h2>
+        <p class="reveal d2" data-en="What we seek is not a way of working that chases productivity and efficiency alone. It is to make a place where nature and people, past and present, the divine and the human are gently bound together — to grow as a family alongside our children, to hand this practice to the next generation, and to open it to the world. Those aspirations take shape as the nine endeavours that follow.">
           私たちが志すのは、生産性や効率のみを追う働き方ではありません。自然と人、過去と現在、神と人。それらがゆるやかに結ばれる場を設えること。子供とともに、家族で成長しながら、その営みを次の世代へ手渡し、世界へひろげてゆくこと。その実践のかたちが、ここに連なる九つの営みです。
         </p>
       </div>
@@ -116,10 +123,10 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">01</div>
       <div class="dept-kicker">
-        <span class="dept-title">株式会社 悠三堂</span>
-        <span class="dept-en">Yusando Inc.</span>
+        <span class="dept-title" data-en="Yusando Inc.">株式会社 悠三堂</span>
+        <span class="dept-en" data-en="株式会社 悠三堂">Yusando Inc.</span>
       </div>
-      <p class="dept-lead">すべての営みの要。自然栽培の茶を育て、世に送り出します。</p>
+      <p class="dept-lead" data-en="The heart of it all. We grow naturally cultivated tea and send it out into the world.">すべての営みの要。自然栽培の茶を育て、世に送り出します。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
           <img class="fill" src="assets/photo-01-yusando-co.jpg" alt="自然栽培の茶畑での摘採作業" />
@@ -127,24 +134,24 @@
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">自然栽培茶の生産・販売</span>
-          <span class="d">農薬にも肥料にも頼らず、土の力のままに育てた日本茶を、国の内外の食卓へ届けます。</span>
+          <span class="t" data-en="Growing &amp; selling naturally cultivated tea">自然栽培茶の生産・販売</span>
+          <span class="d" data-en="Japanese tea raised on the power of the soil alone, without pesticides or fertiliser, delivered to tables at home and abroad.">農薬にも肥料にも頼らず、土の力のままに育てた日本茶を、国の内外の食卓へ届けます。</span>
         </li>
         <li>
-          <span class="t">週三日勤務という働き方</span>
-          <span class="d">必要なだけ働き、余白の時間は暮らしと創作、学びへ。農を軸とする経済的自立――「農FIRE」の実践です。</span>
+          <span class="t" data-en="A three-day working week">週三日勤務という働き方</span>
+          <span class="d" data-en="Work only as much as needed; give the remaining time to living, making and learning. A path to economic independence rooted in farming — what we call &ldquo;farm FIRE.&rdquo;">必要なだけ働き、余白の時間は暮らしと創作、学びへ。農を軸とする経済的自立――「農FIRE」の実践です。</span>
         </li>
         <li>
-          <span class="t">インターナショナルな会社</span>
-          <span class="d">国境を越えてパートナーや顧客と結び、多様な仲間とともに働く、開かれた組織へ。</span>
+          <span class="t" data-en="An international company">インターナショナルな会社</span>
+          <span class="d" data-en="An open organisation, bound to partners and customers across borders and working alongside companions of many backgrounds.">国境を越えてパートナーや顧客と結び、多様な仲間とともに働く、開かれた組織へ。</span>
         </li>
         <li>
-          <span class="t">農福連携</span>
-          <span class="d">農の現場を、障がいのある人たちの働く場、育つ場に。農業と福祉が手を携えるしくみを育てます。</span>
+          <span class="t" data-en="Farming &amp; welfare, together">農福連携</span>
+          <span class="d" data-en="Turning the farm into a place where people with disabilities can work and grow. We nurture a system where agriculture and welfare go hand in hand.">農の現場を、障がいのある人たちの働く場、育つ場に。農業と福祉が手を携えるしくみを育てます。</span>
         </li>
         <li>
-          <span class="t">海外研修生・ツアーの受け入れ</span>
-          <span class="d">海外からの研修生やツアーを迎え、自然栽培の現場とその思想に、じかに触れられる場をひらきます。</span>
+          <span class="t" data-en="Welcoming trainees &amp; tours from abroad">海外研修生・ツアーの受け入れ</span>
+          <span class="d" data-en="We welcome trainees and tours from overseas, opening a place to touch the practice and philosophy of natural cultivation firsthand.">海外からの研修生やツアーを迎え、自然栽培の現場とその思想に、じかに触れられる場をひらきます。</span>
         </li>
       </ul>
     </div>
@@ -155,10 +162,10 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">02</div>
       <div class="dept-kicker">
-        <span class="dept-title">悠三堂 茶道部</span>
-        <span class="dept-en">Shizen Sado — Natural Tea Ceremony</span>
+        <span class="dept-title" data-en="Yusando Tea Ceremony Club">悠三堂 茶道部</span>
+        <span class="dept-en" data-en="自然茶道">Shizen Sado — Natural Tea Ceremony</span>
       </div>
-      <p class="dept-lead">「自然茶道」を打ち立てる試み。自ら育てた農産物とその加工品をもって、茶の湯のすべてを、できうるかぎり自らの手で設えます。</p>
+      <p class="dept-lead" data-en="An attempt to establish a &ldquo;natural tea ceremony&rdquo; — setting the whole of the tea gathering, as far as we can, by our own hands, with the crops and preparations we grow ourselves.">「自然茶道」を打ち立てる試み。自ら育てた農産物とその加工品をもって、茶の湯のすべてを、できうるかぎり自らの手で設えます。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
           <img class="fill" src="assets/photo-02-sado.jpg" alt="自家製抹茶ときな粉のお菓子" />
@@ -166,28 +173,28 @@
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">自然栽培抹茶を使用する</span>
-          <span class="d">一服は、自ら育てた茶葉から始まります。</span>
+          <span class="t" data-en="Using naturally cultivated matcha">自然栽培抹茶を使用する</span>
+          <span class="d" data-en="Each bowl begins with tea leaves we have grown ourselves.">一服は、自ら育てた茶葉から始まります。</span>
         </li>
         <li>
-          <span class="t">体の使い方から美しく</span>
-          <span class="d">所作、呼吸、姿勢。かたちを整えることから、内ににじむ美しさを養います。</span>
+          <span class="t" data-en="Beauty from the way we move">体の使い方から美しく</span>
+          <span class="d" data-en="Gesture, breath, posture. By ordering the outward form, we cultivate a beauty that seeps from within.">所作、呼吸、姿勢。かたちを整えることから、内ににじむ美しさを養います。</span>
         </li>
         <li>
-          <span class="t">茶花も自分で育てる</span>
-          <span class="d">席を彩る一輪もまた、自らの手で育てます。</span>
+          <span class="t" data-en="Growing our own tea flowers">茶花も自分で育てる</span>
+          <span class="d" data-en="Even the single bloom that adorns the room is raised by our own hands.">席を彩る一輪もまた、自らの手で育てます。</span>
         </li>
         <li>
-          <span class="t">子供たちにも敷居が低い</span>
-          <span class="d">堅苦しさより、親しみを。誰もが自然に座れる、開かれた茶の場をつくります。</span>
+          <span class="t" data-en="Welcoming to children, too">子供たちにも敷居が低い</span>
+          <span class="d" data-en="Warmth over formality. We make an open tea gathering where anyone can naturally take a seat.">堅苦しさより、親しみを。誰もが自然に座れる、開かれた茶の場をつくります。</span>
         </li>
         <li>
-          <span class="t">お茶懐石にも挑戦する</span>
-          <span class="d">一服の前後にひろがる食の文化まで含めて、もてなしを深めます。</span>
+          <span class="t" data-en="Venturing into cha-kaiseki">お茶懐石にも挑戦する</span>
+          <span class="d" data-en="We deepen our hospitality to include the culinary culture that unfolds around a bowl of tea.">一服の前後にひろがる食の文化まで含めて、もてなしを深めます。</span>
         </li>
         <li>
-          <span class="t">自然栽培に取り組む</span>
-          <span class="d">茶道の根を、畑そのものに据えます。</span>
+          <span class="t" data-en="Committed to natural cultivation">自然栽培に取り組む</span>
+          <span class="d" data-en="We set the root of the tea ceremony in the field itself.">茶道の根を、畑そのものに据えます。</span>
         </li>
       </ul>
     </div>
@@ -198,10 +205,10 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">03</div>
       <div class="dept-kicker">
-        <span class="dept-title">悠三堂 水田部</span>
-        <span class="dept-en">Rice Paddy Club</span>
+        <span class="dept-title" data-en="Yusando Rice Paddy Club">悠三堂 水田部</span>
+        <span class="dept-en" data-en="水田部">Rice Paddy Club</span>
       </div>
-      <p class="dept-lead">田を通じて、自らの食を自らの手でまかなう暮らしと、それを担う家族を育みます。</p>
+      <p class="dept-lead" data-en="Through the paddy, we cultivate a self-sufficient way of living — and the families who carry it on.">田を通じて、自らの食を自らの手でまかなう暮らしと、それを担う家族を育みます。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
           <img class="fill" src="assets/photo-03-suiden-2.jpg" alt="実りの季節を迎えた稲穂" />
@@ -209,20 +216,20 @@
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">自給自足できる家族を育てる</span>
-          <span class="d">米づくりを軸に、「買う」から「つくって食べる」へ。世代を越えて受け継げる、暮らしの土台を築きます。</span>
+          <span class="t" data-en="Raising self-sufficient families">自給自足できる家族を育てる</span>
+          <span class="d" data-en="With rice at the centre, moving from &ldquo;buying&rdquo; to &ldquo;growing and eating.&rdquo; We build a foundation for living that can pass across generations.">米づくりを軸に、「買う」から「つくって食べる」へ。世代を越えて受け継げる、暮らしの土台を築きます。</span>
         </li>
         <li>
-          <span class="t">仲間と田を分かち合う</span>
-          <span class="d">もみまき、田植え、稲刈り。節目の作業はみんなで協力し、労力も収穫も分かち合います。</span>
+          <span class="t" data-en="Sharing the paddy with companions">仲間と田を分かち合う</span>
+          <span class="d" data-en="Seeding, planting, harvest. The milestone tasks are done together, sharing both the labour and the yield.">もみまき、田植え、稲刈り。節目の作業はみんなで協力し、労力も収穫も分かち合います。</span>
         </li>
         <li>
-          <span class="t">新しい、柔らかい農家をつくる</span>
-          <span class="d">10年の学びをもとに、規模や効率にしばられない、しなやかな農のかたちを育てます。</span>
+          <span class="t" data-en="Shaping a new, gentler kind of farmer">新しい、柔らかい農家をつくる</span>
+          <span class="d" data-en="Drawing on ten years of learning, we grow a supple form of farming, unbound by scale or efficiency.">10年の学びをもとに、規模や効率にしばられない、しなやかな農のかたちを育てます。</span>
         </li>
         <li>
-          <span class="t">自然栽培米を作れる人を増やす</span>
-          <span class="d">貴重な自然栽培米の技を手渡し、つくり手の輪をひろげていきます。</span>
+          <span class="t" data-en="Growing the circle of natural-rice makers">自然栽培米を作れる人を増やす</span>
+          <span class="d" data-en="We pass on the craft of precious naturally cultivated rice, widening the circle of makers.">貴重な自然栽培米の技を手渡し、つくり手の輪をひろげていきます。</span>
         </li>
       </ul>
     </div>
@@ -233,10 +240,10 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">04</div>
       <div class="dept-kicker">
-        <span class="dept-title">悠三堂ギャラリー</span>
-        <span class="dept-en">Yusando Gallery</span>
+        <span class="dept-title" data-en="Yusando Gallery">悠三堂ギャラリー</span>
+        <span class="dept-en" data-en="古美術・工芸">Yusando Gallery</span>
       </div>
-      <p class="dept-lead">美術を暮らしのうちに取り戻し、やがて自らもつくる側に立ちます。</p>
+      <p class="dept-lead" data-en="Returning art to daily life — and, in time, standing on the side of those who make it.">美術を暮らしのうちに取り戻し、やがて自らもつくる側に立ちます。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
           <img class="fill" src="assets/photo-04-kobijutsu-2.jpg" alt="白木星茶碗" style="object-position: center 66%;" />
@@ -244,16 +251,16 @@
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">アートで生活を潤す</span>
-          <span class="d">美術品や工芸を日々の暮らしに迎え、心の豊かさを養います。</span>
+          <span class="t" data-en="Enriching life through art">アートで生活を潤す</span>
+          <span class="d" data-en="Welcoming fine art and craft into everyday life, we nurture a richness of the heart.">美術品や工芸を日々の暮らしに迎え、心の豊かさを養います。</span>
         </li>
         <li>
-          <span class="t">日本の古美術を世界に発信する</span>
-          <span class="d">受け継がれてきた日本の美を、国境を越えて手渡していきます。</span>
+          <span class="t" data-en="Sharing Japanese antique art with the world">日本の古美術を世界に発信する</span>
+          <span class="d" data-en="We hand on the beauty of Japan, passed down through generations, across borders.">受け継がれてきた日本の美を、国境を越えて手渡していきます。</span>
         </li>
         <li>
-          <span class="t">自分たちも芸術品を作れるようになる</span>
-          <span class="d">鑑賞や収集にとどまらず、つくり手としての技と感性を磨きます。</span>
+          <span class="t" data-en="Becoming makers ourselves">自分たちも芸術品を作れるようになる</span>
+          <span class="d" data-en="Beyond appreciating and collecting, we hone the skill and sensibility of the maker.">鑑賞や収集にとどまらず、つくり手としての技と感性を磨きます。</span>
         </li>
       </ul>
     </div>
@@ -264,10 +271,10 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">05</div>
       <div class="dept-kicker">
-        <span class="dept-title">自然米酒 PEACE</span>
-        <span class="dept-en">Natural Rice Sake</span>
+        <span class="dept-title" data-en="Shizen Beishu PEACE">自然米酒 PEACE</span>
+        <span class="dept-en" data-en="自然米酒">Natural Rice Sake</span>
       </div>
-      <p class="dept-lead">田からつづく、神と人をむすぶ酒づくり。</p>
+      <p class="dept-lead" data-en="Sake that reaches on from the paddy, binding the divine and the human.">田からつづく、神と人をむすぶ酒づくり。</p>
       <div class="dept-media reveal" style="max-width: 460px;">
         <div class="ph ratio-45 natural">
           <img class="fill" src="assets/photo-05-sake-2.jpg" alt="純米吟醸「以和為貴 Peace」― 自然栽培初霜100%・倉本酒造" />
@@ -275,16 +282,16 @@
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">自然栽培の日本酒を作る</span>
-          <span class="d">自然栽培の米から、土地の力をそのまま映した一本を醸します。</span>
+          <span class="t" data-en="Brewing naturally cultivated sake">自然栽培の日本酒を作る</span>
+          <span class="d" data-en="From naturally cultivated rice, we brew a bottle that mirrors the power of the land itself.">自然栽培の米から、土地の力をそのまま映した一本を醸します。</span>
         </li>
         <li>
-          <span class="t">神と人を繋ぐ日本酒作り</span>
-          <span class="d">古来、酒は祈りとともにあるもの。感謝を込めた、ハレの日の一献を目指します。</span>
+          <span class="t" data-en="Sake that binds the divine and the human">神と人を繋ぐ日本酒作り</span>
+          <span class="d" data-en="Since ancient times, sake has stood alongside prayer. We aspire to a cup for auspicious days, offered with gratitude.">古来、酒は祈りとともにあるもの。感謝を込めた、ハレの日の一献を目指します。</span>
         </li>
         <li>
-          <span class="t">酒販免許を取得</span>
-          <span class="d">2026年5月、酒販免許を取得。自然栽培で育てた自分たちの米を、奈良の古い酒蔵・倉本酒造さんとともに醸す、新しい日本酒づくりが始まっています。</span>
+          <span class="t" data-en="Sake licence acquired">酒販免許を取得</span>
+          <span class="d" data-en="In May 2026 we obtained our sake licence. Using our own naturally cultivated rice, a new sake is now being brewed together with Kuramoto Sake Brewery, a historic kura in Nara.">2026年5月、酒販免許を取得。自然栽培で育てた自分たちの米を、奈良の古い酒蔵・倉本酒造さんとともに醸す、新しい日本酒づくりが始まっています。</span>
         </li>
       </ul>
     </div>
@@ -295,10 +302,10 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">06</div>
       <div class="dept-kicker">
-        <span class="dept-title">悠三堂 古民家</span>
-        <span class="dept-en">Kominka — Old Houses</span>
+        <span class="dept-title" data-en="Yusando Kominka">悠三堂 古民家</span>
+        <span class="dept-en" data-en="古民家">Kominka — Old Houses</span>
       </div>
-      <p class="dept-lead">日本の伝統家屋を守り、暮らしの場として今によみがえらせます。</p>
+      <p class="dept-lead" data-en="Preserving Japan's traditional houses and reviving them, today, as places to live.">日本の伝統家屋を守り、暮らしの場として今によみがえらせます。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
           <img class="fill" src="assets/photo-06-kominka.jpg" alt="緑に囲まれた古民家と庭" />
@@ -306,16 +313,16 @@
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">日本の伝統的な家屋の保存</span>
-          <span class="d">失われゆく古民家を、壊さずに受け継ぎます。</span>
+          <span class="t" data-en="Preserving traditional Japanese houses">日本の伝統的な家屋の保存</span>
+          <span class="d" data-en="We carry on the old houses that are being lost, rather than tearing them down.">失われゆく古民家を、壊さずに受け継ぎます。</span>
         </li>
         <li>
-          <span class="t">有効活用を考える</span>
-          <span class="d">保存にとどまらず、カフェや集いの場として、いまの暮らしのなかに生かします。</span>
+          <span class="t" data-en="Bringing them into use">有効活用を考える</span>
+          <span class="d" data-en="Beyond mere preservation, we bring them into today's life as cafés and gathering places.">保存にとどまらず、カフェや集いの場として、いまの暮らしのなかに生かします。</span>
         </li>
         <li>
-          <span class="t">次の世代にも美しい暮らしを残す</span>
-          <span class="d">建物とともに、そこに宿る暮らしの美意識を、未来へ手渡します。</span>
+          <span class="t" data-en="Leaving a beautiful life for the next generation">次の世代にも美しい暮らしを残す</span>
+          <span class="d" data-en="Along with the buildings, we hand on the aesthetic of living that dwells within them.">建物とともに、そこに宿る暮らしの美意識を、未来へ手渡します。</span>
         </li>
       </ul>
     </div>
@@ -331,8 +338,8 @@
       <div class="idx reveal">外</div>
       <div>
         <span class="eyebrow reveal">Beyond Yusando</span>
-        <h2 class="reveal d1">内なる実践を、世へひらく。</h2>
-        <p class="reveal d2">
+        <h2 class="reveal d1" data-en="Opening our inner practice to the world.">内なる実践を、世へひらく。</h2>
+        <p class="reveal d2" data-en="What began in the field spreads, in time, beyond Yusando itself. To tell it through film, to bind the makers together, to open places where people gather. Three attempts to carry what we have grown within out into the world.">
           畑から始まった営みは、やがて悠三堂の枠を越えて広がっていきます。映像で伝え、担い手を結び、人の集う場をひらく。内で育てたものを、世界へとつなぐ三つの試みです。
         </p>
       </div>
@@ -348,9 +355,9 @@
       <div class="dept-no">07</div>
       <div class="dept-kicker">
         <span class="dept-title">YUSANDO CHANNEL</span>
-        <span class="dept-en">Broadcasting a way of life</span>
+        <span class="dept-en" data-en="生き方を発信する">Broadcasting a way of life</span>
       </div>
-      <p class="dept-lead">悠三堂の実践と思想を、映像に託して世界へ届けるメディアです。</p>
+      <p class="dept-lead" data-en="A medium that carries Yusando's practice and philosophy to the world through film.">悠三堂の実践と思想を、映像に託して世界へ届けるメディアです。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
           <img class="fill" src="assets/photo-07-channel.jpg" alt="YUSANDO CHANNEL 動画サムネイル ― 自然栽培29年 橋本進に聞く" />
@@ -358,12 +365,12 @@
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">自然栽培を発信する</span>
-          <span class="d">畑の四季、栽培の知恵、つくり手の手仕事。記録し、伝えます。</span>
+          <span class="t" data-en="Sharing natural cultivation">自然栽培を発信する</span>
+          <span class="d" data-en="The seasons of the field, the wisdom of cultivation, the handwork of the makers. We record and pass it on.">畑の四季、栽培の知恵、つくり手の手仕事。記録し、伝えます。</span>
         </li>
         <li>
-          <span class="t">生き方を発信する</span>
-          <span class="d">茶、米、酒、美術、働き方。悠三堂という一つの生き方を、そのままひらいていきます。</span>
+          <span class="t" data-en="Sharing a way of life">生き方を発信する</span>
+          <span class="d" data-en="Tea, rice, sake, art, the way we work. We open up Yusando's single way of living, just as it is.">茶、米、酒、美術、働き方。悠三堂という一つの生き方を、そのままひらいていきます。</span>
         </li>
       </ul>
     </div>
@@ -374,27 +381,27 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">08</div>
       <div class="dept-kicker">
-        <span class="dept-title">一般社団法人 日本自然茶協会</span>
-        <span class="dept-en">Japan Natural Tea Association</span>
+        <span class="dept-title" data-en="Japan Natural Tea Association">一般社団法人 日本自然茶協会</span>
+        <span class="dept-en" data-en="一般社団法人">Japan Natural Tea Association</span>
       </div>
-      <p class="dept-lead">悠三堂の枠を越えて、自然茶の担い手と愛好家を結ぶ、業界横断の共同体です。</p>
+      <p class="dept-lead" data-en="Reaching beyond Yusando, a cross-industry community binding the makers and lovers of natural tea.">悠三堂の枠を越えて、自然茶の担い手と愛好家を結ぶ、業界横断の共同体です。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
-          <div class="ph-cap"><span class="jp">協会の集い・自然茶の産地</span>IMAGE — ASSOCIATION &amp; ORIGINS</div>
+          <div class="ph-cap"><span class="jp" data-en="Association gatherings &amp; natural-tea origins">協会の集い・自然茶の産地</span><span data-en="協会の集い・自然茶の産地">IMAGE — ASSOCIATION &amp; ORIGINS</span></div>
         </div>
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">自然栽培の農家のコミュニティ</span>
-          <span class="d">各地で自然栽培に挑む農家が、知見と志を分かち合う場。</span>
+          <span class="t" data-en="A community of natural-cultivation farmers">自然栽培の農家のコミュニティ</span>
+          <span class="d" data-en="A place where farmers taking on natural cultivation across the country share knowledge and resolve.">各地で自然栽培に挑む農家が、知見と志を分かち合う場。</span>
         </li>
         <li>
-          <span class="t">一般消費者・アンバサダー・法人をつなぐ</span>
-          <span class="d">つくり手から、飲み手、伝え手、企業まで。自然茶を支える輪を、ひろげていきます。</span>
+          <span class="t" data-en="Connecting consumers, ambassadors &amp; companies">一般消費者・アンバサダー・法人をつなぐ</span>
+          <span class="d" data-en="From makers to drinkers, storytellers and companies — we widen the circle that supports natural tea.">つくり手から、飲み手、伝え手、企業まで。自然茶を支える輪を、ひろげていきます。</span>
         </li>
         <li>
-          <span class="t">日本の自然茶を世界に発信する</span>
-          <span class="d">日本ならではの自然茶の価値を、国境を越えて伝えていきます。</span>
+          <span class="t" data-en="Sharing Japan's natural tea with the world">日本の自然茶を世界に発信する</span>
+          <span class="d" data-en="We carry the value of Japan's natural tea across borders.">日本ならではの自然茶の価値を、国境を越えて伝えていきます。</span>
         </li>
       </ul>
     </div>
@@ -405,23 +412,23 @@
     <div class="dept-body reveal d1">
       <div class="dept-no">09</div>
       <div class="dept-kicker">
-        <span class="dept-title">YUSANDO CAFE（仮）</span>
-        <span class="dept-en">A place to taste the practice</span>
+        <span class="dept-title" data-en="YUSANDO CAFE (tentative)">YUSANDO CAFE（仮）</span>
+        <span class="dept-en" data-en="構想中">A place to taste the practice</span>
       </div>
-      <p class="dept-lead">悠三堂の営みを、一杯の茶として味わえる場。いま、構想をあたためています。</p>
+      <p class="dept-lead" data-en="A place to taste Yusando's practice as a single cup of tea. The idea is quietly taking shape.">悠三堂の営みを、一杯の茶として味わえる場。いま、構想をあたためています。</p>
       <div class="dept-media reveal">
         <div class="ph ratio-45">
-          <div class="ph-cap"><span class="jp">カフェ空間・一服のしつらえ</span>IMAGE — CAFE SPACE</div>
+          <div class="ph-cap"><span class="jp" data-en="Café space &amp; the setting of a bowl of tea">カフェ空間・一服のしつらえ</span><span data-en="カフェ空間・一服のしつらえ">IMAGE — CAFE SPACE</span></div>
         </div>
       </div>
       <ul class="kw detail">
         <li>
-          <span class="t">自然栽培茶を味わえる場</span>
-          <span class="d">畑からつづく一杯を、誰もが気軽に体験できる入口に。</span>
+          <span class="t" data-en="A place to taste naturally cultivated tea">自然栽培茶を味わえる場</span>
+          <span class="d" data-en="An entrance where anyone can freely experience the cup that reaches on from the field.">畑からつづく一杯を、誰もが気軽に体験できる入口に。</span>
         </li>
         <li>
-          <span class="t">古民家とともに</span>
-          <span class="d">守り受け継ぐ古民家を、集いの場として活かしていきます。</span>
+          <span class="t" data-en="Together with the old houses">古民家とともに</span>
+          <span class="d" data-en="We bring the old houses we preserve into use as places for people to gather.">守り受け継ぐ古民家を、集いの場として活かしていきます。</span>
         </li>
       </ul>
     </div>
@@ -435,23 +442,23 @@
   <div class="wrap">
     <div class="f-head">
       <span class="eyebrow reveal">Founder &amp; History</span>
-      <div class="f-name reveal d1">礒崎 遼太郎</div>
-      <div class="f-role reveal d1">Ryotaro Isozaki — Founder</div>
-      <div class="f-titles reveal d1">株式会社 悠三堂 代表取締役<br />一般社団法人 日本自然茶協会 代表理事</div>
-      <p class="f-bio reveal d2">
+      <div class="f-name reveal d1" data-en="Ryotaro Isozaki">礒崎 遼太郎</div>
+      <div class="f-role reveal d1" data-en="礒崎 遼太郎 — 創立者">Ryotaro Isozaki — Founder</div>
+      <div class="f-titles reveal d1" data-en="President, Yusando Inc.<br />Representative Director, Japan Natural Tea Association">株式会社 悠三堂 代表取締役<br />一般社団法人 日本自然茶協会 代表理事</div>
+      <p class="f-bio reveal d2" data-en="Born 1983 in Osaka. Graduated from Waseda University, School of Letters, majoring in Eastern philosophy.<br />After studying philosophy he turned to the soil, founding Yusando on the cornerstone of naturally cultivated tea.">
         1983年生まれ、大阪府出身。早稲田大学第一文学部東洋哲学専修卒業。<br />
         哲学を修めたのち土へ向かい、自然栽培の茶づくりを礎に悠三堂を興す。
       </p>
     </div>
     <div class="timeline reveal d2">
-      <div class="tl"><span class="ty">1983</span><span class="te">大阪府に生まれる</span></div>
-      <div class="tl"><span class="ty">2014</span><span class="te">新規就農。自然栽培による茶づくりを始める</span></div>
-      <div class="tl"><span class="ty">2016</span><span class="te">株式会社 悠三堂を設立</span></div>
-      <div class="tl"><span class="ty">2018</span><span class="te"><span class="ev">有機JAS認証を取得</span><span class="ev">農福連携の取り組み、始まる</span></span></div>
-      <div class="tl"><span class="ty">2020</span><span class="te">古民家を拠点にする</span></div>
-      <div class="tl"><span class="ty">2023</span><span class="te"><span class="ev">悠三堂 茶道部、始まる</span><span class="ev">アメリカ出身のジェフ、加入</span></span></div>
-      <div class="tl"><span class="ty">2024</span><span class="te"><span class="ev">フランス出身のヴィンセント、加入</span><span class="ev">YUSANDO CHANNEL、配信を開始</span><span class="ev">国際インターンシップ、始まる</span><span class="ev">直営店をオープン</span><span class="ev">悠三堂 水田部、始まる</span><span class="ev">週三日勤務、始まる</span></span></div>
-      <div class="tl"><span class="ty">2026</span><span class="te"><span class="ev">酒販免許を取得。日本酒づくり、始まる</span><span class="ev">一般社団法人 日本自然茶協会を設立</span><span class="ev">古美術商免許を取得</span></span></div>
+      <div class="tl"><span class="ty">1983</span><span class="te" data-en="Born in Osaka">大阪府に生まれる</span></div>
+      <div class="tl"><span class="ty">2014</span><span class="te" data-en="Began farming; started making tea by natural cultivation">新規就農。自然栽培による茶づくりを始める</span></div>
+      <div class="tl"><span class="ty">2016</span><span class="te" data-en="Founded Yusando Inc.">株式会社 悠三堂を設立</span></div>
+      <div class="tl"><span class="ty">2018</span><span class="te" data-en='<span class="ev">Obtained Organic JAS certification</span><span class="ev">Farming &amp; welfare initiative begins</span>'><span class="ev">有機JAS認証を取得</span><span class="ev">農福連携の取り組み、始まる</span></span></div>
+      <div class="tl"><span class="ty">2020</span><span class="te" data-en="Made an old farmhouse our base">古民家を拠点にする</span></div>
+      <div class="tl"><span class="ty">2023</span><span class="te" data-en='<span class="ev">Yusando Tea Ceremony Club begins</span><span class="ev">Jeff, from the USA, joins</span>'><span class="ev">悠三堂 茶道部、始まる</span><span class="ev">アメリカ出身のジェフ、加入</span></span></div>
+      <div class="tl"><span class="ty">2024</span><span class="te" data-en='<span class="ev">Vincent, from France, joins</span><span class="ev">YUSANDO CHANNEL begins broadcasting</span><span class="ev">International internship begins</span><span class="ev">Directly managed shop opens</span><span class="ev">Yusando Rice Paddy Club begins</span><span class="ev">Three-day working week begins</span>'><span class="ev">フランス出身のヴィンセント、加入</span><span class="ev">YUSANDO CHANNEL、配信を開始</span><span class="ev">国際インターンシップ、始まる</span><span class="ev">直営店をオープン</span><span class="ev">悠三堂 水田部、始まる</span><span class="ev">週三日勤務、始まる</span></span></div>
+      <div class="tl"><span class="ty">2026</span><span class="te" data-en='<span class="ev">Sake licence acquired; sake brewing begins</span><span class="ev">Japan Natural Tea Association established</span><span class="ev">Antique-art dealer licence acquired</span>'><span class="ev">酒販免許を取得。日本酒づくり、始まる</span><span class="ev">一般社団法人 日本自然茶協会を設立</span><span class="ev">古美術商免許を取得</span></span></div>
     </div>
   </div>
 </section>
@@ -460,18 +467,18 @@
 <section class="closing" data-screen-label="クロージング">
   <div class="wrap">
     <div class="mark reveal"><span class="seal">悠</span></div>
-    <p class="copy reveal d1">
+    <p class="copy reveal d1" data-en='Harmony, above all.<br />Rooted in <span class="accent">natural cultivation</span>, <span class="accent">art</span> and <span class="accent">philosophy</span>, we <span class="end">savour life.</span>'>
       和を以て貴しと為す。<br />
       <span class="accent">自然栽培</span>と<span class="accent">アート</span>、<span class="accent">哲学</span>をベースに、<span class="end">人生を楽しむ。</span>
     </p>
-    <p class="sub reveal d2">
+    <p class="sub reveal d2" data-en="That, alone, is the single thread running through every endeavour of Yusando.">
       それこそが、悠三堂のあらゆる営みを貫く、ただひとつの軸です。
     </p>
     <img class="foot-logo reveal d2" src="assets/logo.png" alt="悠三堂 YUSANDO" />
     <div class="colophon">
       <span class="jp">悠三堂 — Artisan Tea House</span>
       <span>Cultivation &middot; Art &middot; Philosophy</span>
-      <span class="jp">Vision Document</span>
+      <span class="jp" data-en="Vision Document">Vision Document</span>
     </div>
   </div>
 </section>
@@ -490,6 +497,31 @@
     entries.forEach(e=>{ tb.classList.toggle('show', !e.isIntersecting); });
   },{threshold:0.2});
   heroIO.observe(hero);
+
+  // ===== bilingual toggle =====
+  (function(){
+    const nodes = document.querySelectorAll('[data-en]');
+    // capture the original Japanese markup once
+    nodes.forEach(n => { n.dataset.ja = n.innerHTML; });
+    const toggle = document.getElementById('langToggle');
+    const buttons = toggle.querySelectorAll('button');
+
+    function apply(lang){
+      document.documentElement.lang = lang;
+      nodes.forEach(n => {
+        const html = lang === 'en' ? n.getAttribute('data-en') : n.dataset.ja;
+        if (html != null) n.innerHTML = html;
+      });
+      buttons.forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
+      try { localStorage.setItem('yusando-lang', lang); } catch(e){}
+    }
+
+    buttons.forEach(b => b.addEventListener('click', () => apply(b.dataset.lang)));
+
+    let saved = 'ja';
+    try { saved = localStorage.getItem('yusando-lang') || 'ja'; } catch(e){}
+    apply(saved);
+  })();
 </script>
 </body>
 </html>
